@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Library System</title>
+</head>
+
+<body>
+    <nav id="nav">
+        <div class="navTop">
+            <div class="navItem">
+                <img src="./img/logo.jpg" alt="Library Logo">
+            </div>
+            <div class="navItem">
+                <div class="search">
+                    <input type="text" placeholder="Search..." class="searchInput">
+                    <img src="./img/search.png" width="20" height="20" alt="Search" class="searchIcon">
+                </div>
+            </div>
+            <div class="navItem">
+                <span class="limitedOffer" onclick="location.href='inventory.html';" style="cursor: pointer; margin-right: 20px;">Book Inventory</span>
+                <span class="limitedOffer" onclick="location.href='admin.php';" style="cursor: pointer; margin-right: 20px;">Admin Panel</span>
+                <span class="limitedOffer" onclick="location.href='rules.html';" style="cursor: pointer;">Library Rules</span>
+            </div>
+        </div>
+        <div class="navBottom">
+            <h3 class="menuItem">FICTION</h3>
+            <h3 class="menuItem">HISTORY</h3>
+            <h3 class="menuItem">CLASSIC</h3>
+            <h3 class="menuItem">SCIENCE</h3>
+            <h3 class="menuItem">BIOGRAPHY</h3>
+            <h3 class="menuItem">MYSTERY</h3>
+        </div>
+    </nav>
+    <div class="slider">
+        <div class="sliderWrapper">
+            <div class="sliderItem">
+                <img src="./img/Book/FictionBook.jpg" alt="Fiction Book" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">NEW<br> FICTION<br> ARRIVALS</h1>
+                <h2 class="sliderPrice">Discover</h2>
+                <a href="#product">
+                    <button class="buyButton">BROWSE NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="./img/Book/HistoryBook.png" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">EXPLORE<br> ANCIENT<br> WORLDS</h1>
+                <h2 class="sliderPrice">Learn</h2>
+                <a href="#product">
+                    <button class="buyButton">BROWSE NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="./img/Book/ClassicBook.jpg" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">TIMELESS<br> LITERARY<br> TREASURES</h1>
+                <h2 class="sliderPrice">Revisit</h2>
+                <a href="#product">
+                    <button class="buyButton">BROWSE NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="./img/Book/Science-Book.jpg" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">JOURNEY<br> THROUGH<br> SCIENCE</h1>
+                <h2 class="sliderPrice">Explore</h2>
+                <a href="#product">
+                    <button class="buyButton">BROWSE NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="./img/Book/BiographyBook.jpg" alt="Biography Book" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">LIVES<br> OF<br> GREATNESS</h1>
+                <h2 class="sliderPrice">Inspire</h2>
+                <a href="#product">
+                    <button class="buyButton">BROWSE NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="./img/Book/MysteryBook.jpg" alt="Mystery Book" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">SOLVE<br> THE<br> MYSTERY</h1>
+                <h2 class="sliderPrice">Intrigue</h2>
+                <a href="#product">
+                    <button class="buyButton">BROWSE NOW!</button>
+                </a>
+            </div>
+        </div>
+    </div>
+   
+    <div class="features">
+        <div class="feature">
+            <img src="./img/Borrow.png" alt="Borrow Icon" class="featureIcon">
+            <span class="featureTitle">EASY BORROWING</span>
+            <span class="featureDesc">Simple and fast borrowing process.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="./img/Return.png" alt="Return Icon">
+            <span class="featureTitle">FLEXIBLE RETURNS</span>
+            <span class="featureDesc">Return books at your convenience.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="./img/Books.png" alt="Collection Icon">
+            <span class="featureTitle">VAST COLLECTION</span>
+            <span class="featureDesc">Access thousands of books from various genres.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="./img/contact.png" alt="Contact Icon">
+            <span class="featureTitle">CONTACT US!</span>
+            <span class="featureDesc">Keep in touch via email and support system.</span>
+        </div>
+    </div>
+    <div class="product" id="product">
+        <img src="./img/image1.jpg" alt="Book Cover" class="productImg">
+        <div class="productDetails">
+            <h1 class="productTitle">BOOK TITLE</h1>
+            <h2 class="productAuthor">Author Name</h2>
+            <h3 class="productRating">Avg Rating: X/5</h3>
+            <p class="productDesc">This is a captivating book description. Dive into a world of adventure, knowledge, and imagination with this exciting title.</p>
+            <button class="productButton">BORROW NOW!</button>
+        </div>
+        <div class="payment">
+            <h1 class="payTitle">Borrower Information</h1>
+            <div class="libraryAddress" style="margin-bottom: 20px; color: #555;">
+                <p><b>Library Address:</b><br>Simpang Ampat, Penang, Malaysia</p>
+            </div>
+            <form action="borrow.php" method="POST">
+                <label>Book ID</label>
+                <input type="text" id="borrowBookIDDisplay" class="payInput" readonly style="background-color: #eee;">
+                <input type="hidden" name="book_id" id="borrowBookID">
+                
+                <input type="hidden" name="book_title" id="borrowBookTitle">
+                
+                <label>Full Name</label>
+                <input type="text" name="name" placeholder="John Doe" class="payInput" required>
+                <br>
+                <label>Membership ID</label>
+                <input type="text" name="membership_id" placeholder="LIB12345" class="payInput" required>
+                <br>
+                <label>Phone Number</label>
+                <input type="text" name="phone" placeholder="+60123456789" class="payInput" maxlength="15" required>
+                <br>
+                <button type="submit" class="payButton">Confirm Borrowing</button>
+                <span class="close">X</span>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footerLeft">
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">About Us</h1>
+                <ul class="fList">
+                    <li class="fListItem">Our Mission</li>
+                    <li class="fListItem">Contact</li>
+                    <li class="fListItem">Events</li>
+                    <li class="fListItem">Partners</li>
+                    <li class="fListItem">Locations</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Useful Links</h1>
+                <ul class="fList">
+                    <li class="fListItem">Support</li>
+                    <li class="fListItem">Renewals</li>
+                    <li class="fListItem">FAQ</li>
+                    <li class="fListItem">Feedback</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Book Genres</h1>
+                <ul class="fList">
+                    <li class="fListItem">Fiction</li>
+                    <li class="fListItem">History</li>
+                    <li class="fListItem">Classic</li>
+                    <li class="fListItem">Science</li>
+                    <li class="fListItem">Biography</li>
+                    <li class="fListItem">Mystery</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerRight">
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
+                <div class="fMail">
+                    <input type="text" placeholder="your@email.com" class="fInput">
+                    <button class="fButton">Join!</button>
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <span class="copyright">@YourLibraryName. All rights reserved. 2025.</span>
+            </div>
+        </div>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+
+</html>
