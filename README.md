@@ -1,1 +1,1 @@
-# newProject
+# A library management system
